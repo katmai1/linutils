@@ -6,6 +6,11 @@ Configuración usada para compartir escaner desde openwrt (sirve para cualquier 
 
 ### Install
 
+```
+opkg update
+
+´´´
+
 ### Config
 
 
