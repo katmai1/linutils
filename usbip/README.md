@@ -7,14 +7,18 @@ Configuración usada para compartir escaner desde openwrt (sirve para cualquier 
 ### Install
 
   ```opkg update```
-  ```opkg install kmod-usb-core kmod-usb2 usbip-server usbip-client usbutils```
 
+  ```opkg install kmod-usb-core kmod-usb2 usbip-server usbip-client usbutils```
 
 ### Config
 
-  ```usbip list -l```bash
+  Obten el usb, en mi caso '1-1.4'
+  ```usbip list -l```
 
-  Debe devolver un valor tipo '1-1.4',edita el script y cambia el valor en esta variable
+  Añadir ésta linea al /etc/rc.local o al /etc/init.d/usbipd
+  ```usbip bind -b 1-1.4``` 
+
+
 
 ## Client
 
