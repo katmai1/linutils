@@ -41,7 +41,7 @@ Configuración usada para compartir escaner desde openwrt (sirve para cualquier 
   
     ```usbip attach -r 192.168.1.3 -b 1-1.4 ``` 
 
-#### Persistencia
+### Persistencia
   - Para hacerlo persistente puedes añadir ésta linea al /etc/rc.local
   
   - Cargar modulo necesario al iniciar
